@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #5d9e7e;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+}
+header{
+    display: flex;
+    padding: 1.5em 0em;
+    align-items: center;
+    padding-right: 2em;
+    background-color: #78b3a4;
+}
+.shrink:hover{
+    transition: 0.2s;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+#logo{
+    text-align: center;
+    flex: 1;
+    padding-left: 5em;
+}
+#logo img{
+    border: 3px #2b2318 solid;
+    border-radius: 2em;
+}
+#menuTopo{
+    flex: 2;
+}
+#menuTopo a{
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+    padding: 0em 2em;
+    text-decoration: none;
+    color: #2b2318;
+    font-size: 1.5em;
+    transition: 1s;
+}
+#menuTopo a:hover{
+    color: #EDF3F1;
+    font-size: 1.75em;
+}
+#banner{
+    max-width: 80%;
+    margin: 1.5em auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 2em;
+}
+#bannercelular{
+    display: none;
+}
+#banner img{
+    border: 3px black solid;
+    border-radius: 2em;
+}
+#promocoes{
+    margin-bottom: 1em;
+    color: #2b2318;
+    border-bottom: 3px #78b3a4 solid;
+    border-radius: 1em;
+    text-align: center;
+    font-size: 1.75em;
+    font-family: 'Kanit', sans-serif;
+}
+#prod img{
+    border: 2px black solid;
+    border-radius: 2em;
+}
+#prod img:hover{
+    cursor: pointer;
+}
+#prod{
+    margin-bottom: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding: 2em;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    flex: 1;
+    text-align: end;
+    background-color: #78b3a4;
+}
+.preco{
+    text-decoration: line-through;
+    color: red;
+}
+.nomeProduto{
+    font-size: 1.25em;
+}
+@media (max-width:500px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    #banner{
+        padding-left: 0em;
+    }
+    #bannerpc{
+        display: none;
+    }
+    #bannercelular{
+        display: flex;
+    }
+    #logo{
+        text-align: center;
+        padding: 0em;
+    }
+    #logo img{
+        text-align: center;
+    }
+    #prod{
+        text-align: center;
+        padding: 0em;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #menuTopo a{
+        font-size: 1em;
+        padding: 0.75em;
+    }
+    #promocoes{
+        font-size: 1.25em;
+    }
+    #menuTopo a:hover{
+        color: #2b2318;
+        font-size: 1.5em;
+    }
+}
